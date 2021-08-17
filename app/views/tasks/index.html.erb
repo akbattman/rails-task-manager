@@ -1,0 +1,9 @@
+<br>
+<div class='container'> 
+  <h4> ### ALL TASKS ### </h4>
+    <ol>
+      <% @tasks.each do |task| %>
+      <li> <%= task.title %>: <%= task.details %></li>
+      <% end %>
+    </ol>
+</div>

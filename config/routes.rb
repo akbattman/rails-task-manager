@@ -6,7 +6,7 @@ Rails.application.routes.draw do
   # create
 
   #one
-
+  get "tasks/:id", to: "tasks#show", as: :task
   #update
 
   #destroy

@@ -1,9 +1,10 @@
 <br>
 <div class='container'> 
   <h4> ### ALL TASKS ### </h4>
-    <ol>
+    <ul>
       <% @tasks.each do |task| %>
-      <li> <%= task.title %>: <%= task.details %></li>
+      <li><%= task.id %>. <%= link_to task.title, task_path(task) %>: <%= task.details %></li>
       <% end %>
-    </ol>
+    </ul>
+  <h4> ############### </h4>
 </div>

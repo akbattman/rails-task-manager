@@ -1,0 +1,11 @@
+<div class='container'> 
+  <h4> ### THIS TASK ### </h4>
+  <h5><%= @task.id %>. <%= @task.title %>: <%= @task.details %></h5>
+  <h4> ############### </h4>
+  <br>
+  <%= link_to 'back', tasks_path %>
+  <%= link_to 'edit', tasks_path %>
+  <%# <%= link_to 'check', tasks_path %>
+  <%= link_to 'delete', tasks_path %>
+</div>
+

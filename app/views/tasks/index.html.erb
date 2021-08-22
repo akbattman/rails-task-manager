@@ -1,10 +1,9 @@
-<br>
-<div class='container'> 
-  <h4> ### ALL TASKS ### </h4>
-    <ul>
-      <% @tasks.each do |task| %>
-      <li><%= task.id %>. <%= link_to task.title, task_path(task) %>: <%= task.details %></li>
-      <% end %>
-    </ul>
-  <h4> ############### </h4>
+<div class='container'><br>
+  <h4> ### ALL TASKS ### </h4><br>
+  <%= link_to 'new task', new_task_path %><br>
+  <%# <ul> %>
+    <% @tasks.each do |task| %>
+    <h5><%= task.id %>. <%= link_to task.title, task_path(task) %>: <%= task.details %></h5>
+    <% end %>
+  <%# </ul> %>
 </div>

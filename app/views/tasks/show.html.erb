@@ -1,11 +1,9 @@
-<div class='container'> 
-  <h4> ### THIS TASK ### </h4>
+<div class='container'><br>
+  <h4> ### SHOW TASK ### </h4><br>
   <h5><%= @task.id %>. <%= @task.title %>: <%= @task.details %></h5>
-  <h4> ############### </h4>
   <br>
-  <%= link_to 'back', tasks_path %>
-  <%= link_to 'edit', tasks_path %>
-  <%# <%= link_to 'check', tasks_path %>
-  <%= link_to 'delete', tasks_path %>
+  <%= link_to 'index', root_path %>
+  <%= link_to 'edit', edit_task_path %>
+  <%= link_to 'delete', task_path(@task), method: :delete, data: { confirm: '🚨 Delete This Task 🚨' } %>
 </div>
 
